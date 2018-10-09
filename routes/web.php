@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('api/properties', [
+    'as' => 'search', 'uses' => 'PropertiesController@search'
+]);
